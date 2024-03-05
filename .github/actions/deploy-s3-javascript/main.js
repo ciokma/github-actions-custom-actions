@@ -14,7 +14,7 @@ function run() {
     core.notice('Hello from my custom Javascript Action!')
 
     const websiteurl = `http://${{bucket}}.s3-website-${{bucketRegion}}.amazonaws.com`
-    core.setOutput('website-url', websiteUrl);
+    core.setOutput('website-url', websiteurl);
 }
 
 run();
